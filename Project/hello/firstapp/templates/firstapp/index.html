@@ -1,4 +1,4 @@
-{% extends 'firstapp/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
  <!-- slider section -->
@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="hero_img-box">
-                        <img src="images/hero.png" alt="" />
+                        <img src="{% static 'images/hero.png' %}" alt="" />
                       </div>
                     </div>
                   </div>
@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="detail_img-box">
-            <img src="images/detail.png" alt="" class="w-100" />
+            <img src="{% static 'images/detail.png' %}" alt="" class="w-100" />
           </div>
         </div>
         <div class=" col-lg-7">
@@ -68,7 +68,7 @@
             <div class="detail-box d-box-1">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-1.png" alt="" />
+                  <img src="{% static 'images/d-1.png' %}" alt="" />
                   <h5>
                     Care kids
                   </h5>
@@ -78,7 +78,7 @@
             <div class="detail-box d-box-2">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-2.png" alt="" />
+                  <img src="{% static 'images/d-2.png' %}" alt="" />
                   <h5>
                     Baby boy
                   </h5>
@@ -88,7 +88,7 @@
             <div class="detail-box d-box-3">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-3.png" alt="" />
+                  <img src="{% static 'images/d-3.png' %}" alt="" />
                   <h5>
                     Baby girl
                   </h5>
@@ -98,7 +98,7 @@
             <div class="detail-box d-box-4">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-4.png" alt="" />
+                  <img src="{% static 'images/d-4.png' %}" alt="" />
                   <h5>
                     Sale
                   </h5>
@@ -127,7 +127,7 @@
         <a href="">
           <div class="product_box">
             <div class="product_img-box">
-              <img src="images/p12.png" alt="" />
+              <img src="{% static 'images/p12.png' %}" alt="" />
               <span>
                 Sale
               </span>
@@ -157,7 +157,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="find_container-img">
-                  <img src="images/find-img.png" alt="" />
+                  <img src="{% static 'images/find-img.png' %}" alt="" />
                 </div>
               </div>
               <div class="col-sm-6">
@@ -188,7 +188,7 @@
               </div>
               <div class="col-sm-6">
                 <div class="shoe_img-box">
-                  <img src="images/shoes.png" alt="" />
+                  <img src="{% static 'images/shoes.png' %}" alt="" />
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@
         </div>
         <div class="col-md-4">
           <div class="find_img-box">
-            <img src="images/find-hero.png" alt="" />
+            <img src="{% static 'images/find-hero.png' %}" alt="" />
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@
                 <div class="client_box">
                   <div class="client_id-box">
                     <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
+                      <img src="{% static 'images/client.png' %}" alt="" />
                     </div>
                     <h4>Carlac liyo</h4>
                   </div>
@@ -238,51 +238,7 @@
                 <div class="client_box">
                   <div class="client_id-box">
                     <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
-                    </div>
-                    <h4>Carlac liyo</h4>
-                  </div>
-                  <div class="client_detail">
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in some
-                      form, by injected humour, or randomised words which don't look
-                      even slightly believable. If you are going to use a passage of
-                      Lorem Ipsum, you need to be sure there isn't anything
-                      embarrassing hidden in the middle of text.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row layout_padding2">
-              <div class="col-md-6">
-                <div class="client_box">
-                  <div class="client_id-box">
-                    <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
-                    </div>
-                    <h4>Carlac liyo</h4>
-                  </div>
-                  <div class="client_detail">
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in some
-                      form, by injected humour, or randomised words which don't look
-                      even slightly believable. If you are going to use a passage of
-                      Lorem Ipsum, you need to be sure there isn't anything
-                      embarrassing hidden in the middle of text.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="client_box">
-                  <div class="client_id-box">
-                    <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
+                      <img src="{% static 'images/client.png' %}" alt="" />
                     </div>
                     <h4>Carlac liyo</h4>
                   </div>
@@ -306,7 +262,7 @@
                 <div class="client_box">
                   <div class="client_id-box">
                     <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
+                      <img src="{% static 'images/client.png' %}" alt="" />
                     </div>
                     <h4>Carlac liyo</h4>
                   </div>
@@ -326,7 +282,51 @@
                 <div class="client_box">
                   <div class="client_id-box">
                     <div class="client_img-box">
-                      <img src="images/client.png" alt="" />
+                      <img src="{% static 'images/client.png' %}" alt="" />
+                    </div>
+                    <h4>Carlac liyo</h4>
+                  </div>
+                  <div class="client_detail">
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in some
+                      form, by injected humour, or randomised words which don't look
+                      even slightly believable. If you are going to use a passage of
+                      Lorem Ipsum, you need to be sure there isn't anything
+                      embarrassing hidden in the middle of text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row layout_padding2">
+              <div class="col-md-6">
+                <div class="client_box">
+                  <div class="client_id-box">
+                    <div class="client_img-box">
+                      <img src="{% static 'images/client.png' %}" alt="" />
+                    </div>
+                    <h4>Carlac liyo</h4>
+                  </div>
+                  <div class="client_detail">
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in some
+                      form, by injected humour, or randomised words which don't look
+                      even slightly believable. If you are going to use a passage of
+                      Lorem Ipsum, you need to be sure there isn't anything
+                      embarrassing hidden in the middle of text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="client_box">
+                  <div class="client_id-box">
+                    <div class="client_img-box">
+                      <img src="{% static 'images/client.png' %}" alt="" />
                     </div>
                     <h4>Carlac liyo</h4>
                   </div>
@@ -375,7 +375,7 @@
           </div>
           <div class="col-sm-5">
             <div class="item_img-box">
-              <img src="images/items.png" alt="" />
+              <img src="{% static 'images/items.png' %}" alt="" />
             </div>
           </div>
         </div>

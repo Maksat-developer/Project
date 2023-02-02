@@ -24,6 +24,9 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(verbose_name="", max_length=200)
     desc = models.TextField(verbose_name="")
+    price = models.DecimalField(max_digits=10,
+                                decimal_places=2,
+                                verbose_name="Цена:")
     pub_date = models.DateTimeField(verbose_name="Дата публикации:")
     in_stock = models.BooleanField(
         default=True,
@@ -35,10 +38,26 @@ class Product(models.Model):
         null=True,
         blank=True)
 
+    class Meta:
+        ordering = ["-price", "name"]
+        unique_together = [
+            "category",
+            "name",
+            "price",
+        ]
+        verbose_name = "Продукт"
+        verbose_name_plural = "Продукты"
+
     def __str__(self):
         s = self.name
         if not self.in_stock:
             s = s + "( Нет в наличии )"
         return s
+
+    def save(self, *args, **kwargs):
+        super(Product, self).save(*args, **kwargs)
+
+    def delete(self, *args, **kwargs):
+        super(Product, self).delete(*args, **kwargs)
 
 
